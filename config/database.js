@@ -1,4 +1,4 @@
-const sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 
 const conexion = new Sequelize('dbsistema', 'root', '',  {
     host: 'localhost',
@@ -9,4 +9,4 @@ const conexion = new Sequelize('dbsistema', 'root', '',  {
     }
 });
 //exportar
-modulo.exports = sequelize;
+module.exports = conexion;
